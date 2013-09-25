@@ -1,51 +1,128 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-<title>Traffic App</title>
-<link href="css/style.css" rel="stylesheet" type="text/css">
-<script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
-</head> 
-<body> 
+    <meta charset="utf-8">
+    <title>Effeckt.css</title>
+    <meta name="description" content="UI-Less & Performant Transitions & Animations">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="stylesheet" href="css/demo.autoprefixed.css">
+    <!-- Individual module CSS files here -->
+    <!-- Should we combine or not combine? -->
+    <link rel="stylesheet" href="css/effeckt.autoprefixed.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-<!-- begin first page -->
-<section>
-	<header>
-		<a class="logo" href="#0"></a>
-        <a class="icon-alert" href="#0"></a>
-       
-    </header>
-	<div data-role="content">	
-		<ul>
-			<li><a href="#page2">Page Two</a></li>
-            <li><a href="#page2">Page Three</a></li>
-			<li><a href="#page2">Page Four</a></li>
-		</ul>	
-        <img alt="No image" src="images/A-Touch-of-English-Bed-Breakfast-Kelowna.gif"/>
-	</div>
-	<footer>
-		<a class="main-menu" href="#0"></a>
-        <a class="sub-menu" href="#0">☰</a>
-	</footer>
-</section>
-<!-- end first page -->
+<body>
 
-<!-- begin first page 
-<section>
-		<a class="logo" href="#page"></a>
-        <a class="icon-alert" href="#0"></a>
-        <h3 class="button">TRACKING</h3>
-	<div data-role="content">	
-	<img alt="No image" src="images/A-Touch-of-English-Bed-Breakfast-Kelowna.gif"/>		
-	</div>
-	<footer>
-		<a class="main-menu" href="#0"></a>
-        <a class="sub-menu" href="#0">☰</a>
-	</footer>
-</section>
-<!-- end first page -->
+  <nav class="effeckt-off-screen-nav" id="effeckt-off-screen-nav">
 
+  <h4>
+    DISPLAY
+    <a href="#0" id="effeckt-off-screen-nav-close" class="effeckt-off-screen-nav-close">×</a>
+  </h4>
+
+  <ul>
+    <li><a href="#0">ABCDEFG</a></li>
+    <li><a href="#0">HIJKLMN</a></li>
+    <li><a href="#0">OPQRUST</a></li>
+    <li><a href="#0">VXYZ</a></li>
+    <li><a href="#0">Phan Từ Huy</a></li>
+    <li><a href="#0">Lê Tân Nha</a></li>
+  </ul>
+
+</nav>
+
+  <!-- overlay coming after is important for ~ selector -->
+  <div class="effeckt-overlay no-transitions" id="effeckt-overlay"></div>
+
+  <div data-effeckt-page="page-1">
+    <header>
+  		<a href="#0" class="logo"></a>
+    	<a href="#0" class="icon-alert"></a>
+<!--
+    <div class="page-wrap no-transitions" id="page-wrap">
+
+      <h1>
+        <a href="./">
+          <span>E</span>
+          <span>f</span>
+          <span>f</span>
+          <span>e</span>
+          <span>c</span>
+          <span>k</span>
+          <span>t</span>
+          <br class="mobile-break">
+          <span>.</span>
+          <span>c</span>
+          <span>s</span>
+          <span>s</span>
+        </a>
+      </h1>
+      <subhead>
+        Performant CSS transitions & animations
+        <a href="https://github.com/h5bp/Effeckt.css">on GitHub</a>
+      </subhead>
+
+ <div class="effeckt effeckt-demo-modals">
+
+  <header>
+    <h2>
+      Off Screen Nav
+      <a href="off-screen-navs.html">#</a>
+    </h2>
+    <!-- <span class="source">
+      ...
+    </span> -->
+  </header>
+<!--
+  <div class="button-group">
+  <button class="off-screen-nav-button" data-effeckt-type="effeckt-off-screen-nav-left-overlay">Left Overlay</button>
+  <button class="off-screen-nav-button" data-effeckt-type="effeckt-off-screen-nav-left-reveal">Left Reveal</button>
+  <button class="off-screen-nav-button" data-effeckt-type="effeckt-off-screen-nav-left-push">Left Push</button>
+  <button class="off-screen-nav-button" data-effeckt-type="effeckt-off-screen-nav-left-bounce" data-effeckt-needs-hide-class="true">Left Bounce</button>
+  <button class="off-screen-nav-button" data-effeckt-type="effeckt-off-screen-nav-left-bounce-out" data-effeckt-needs-hide-class="true">Left Bounce Out</button>
+  <button class="off-screen-nav-button" data-effeckt-type="effeckt-off-screen-nav-left-squeeze">Left Squeeze</button>
+  <button class="off-screen-nav-button" data-effeckt-type="effeckt-off-screen-nav-left-rotate" data-threedee="true">Left Rotate</button>
+  <button class="off-screen-nav-button" data-effeckt-type="effeckt-off-screen-nav-right-overlay">Right Overlay</button>
+  <button class="off-screen-nav-button" data-effeckt-type="effeckt-off-screen-nav-right-reveal">Right Reveal</button>
+  <button class="off-screen-nav-button" data-effeckt-type="effeckt-off-screen-nav-right-push">Right Push</button>
+  <button class="off-screen-nav-button" data-effeckt-type="effeckt-off-screen-nav-right-bounce" data-effeckt-needs-hide-class="true">Right Bounce</button>
+  <button class="off-screen-nav-button" data-effeckt-type="effeckt-off-screen-nav-right-bounce-out" data-effeckt-needs-hide-class="true">Right Bounce Out</button>
+  <button class="off-screen-nav-button" data-effeckt-type="effeckt-off-screen-nav-right-squeeze">Right Squeeze</button>
+  <button class="off-screen-nav-button" data-effeckt-type="effeckt-off-screen-nav-right-rotate" data-threedee="true">Right Rotate</button>
+  <button class="off-screen-nav-button" data-effeckt-type="effeckt-off-screen-nav-top-overlay">Top Overlay</button>
+  <button class="off-screen-nav-button" data-effeckt-type="effeckt-off-screen-nav-push-top">Top Push</button>
+  <button class="off-screen-nav-button" data-effeckt-type="effeckt-off-screen-nav-top-bounce" data-effeckt-needs-hide-class="true">Top Bounce</button>
+  <button class="off-screen-nav-button" data-effeckt-type="effeckt-off-screen-nav-top-bounce-out" data-effeckt-needs-hide-class="true">Top Bounce Out</button>
+  <button class="off-screen-nav-button" data-effeckt-type="effeckt-off-screen-nav-top-card-deck">Top Card Deck</button>
+  <button class="off-screen-nav-button" data-effeckt-type="effeckt-off-screen-nav-bottom-overlay">Bottom Overlay</button>
+  <button class="off-screen-nav-button" data-effeckt-type="effeckt-off-screen-nav-push-bottom">Bottom Push</button>
+  <button class="off-screen-nav-button" data-effeckt-type="effeckt-off-screen-nav-bottom-bounce" data-effeckt-needs-hide-class="true">Bottom Bounce</button>
+  <button class="off-screen-nav-button" data-effeckt-type="effeckt-off-screen-nav-bottom-bounce-out" data-effeckt-needs-hide-class="true">Bottom Bounce Out</button>
+  <button class="off-screen-nav-button" data-effeckt-type="effeckt-off-screen-nav-bottom-card-deck">Bottom Card Deck</button>
+  </div> -->
+  <footer>
+  	<a href="#0" class="main-menu"></a>
+    <button class="off-screen-nav-button sub-menu" data-effeckt-type="effeckt-off-screen-nav-bottom-overlay">&#9776;</button>
+  </footer>
+
+</div>
+
+  <!-- libs -->
+<script src="js/jquery.min.js"></script>
+<script src="js/modernizr.min.js"></script>
+
+  <!-- demo -->
+ <script src="js/demo.js"></script>
+ <script src="js/off-screen-nav.js"></script>
+ <script src="js/page-transitions.js"></script>
+  <!-- ideally should kick this off in the demo js file itself -->
+  <script>
+    stroll.bind('.effeckt-demo-list-scroll ul');
+  </script>
 
 </body>
+
 </html>
+

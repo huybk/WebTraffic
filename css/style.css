@@ -1,28 +1,8 @@
 @charset "utf-8";
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;	
-}
-
 a {	text-decoration: none;}
 li {list-style-type:none;}
 
-header {
-	width:100%;
-    position: fixed;
-	height: 50px;
-    top: 0;
-}
-
-footer {
-	width:100%;
-    position: fixed;
-	height: 50px;
-    bottom: 0;
-	padding-top: 10px;
-}
-
+/* menu footer */
 .main-menu {
 	position:fixed;
 	left: 20px;
@@ -45,12 +25,12 @@ footer a {
 	color: #222;
 }
 
+/* menu header */
 .logo{
 	position:fixed;
 	top: 10px;
 	left: 10px;
-	background-image:url(../images/icon_collect.png);
-	background-repeat:no-repeat;
+	background: transparent url(../images/icon_collect.png) no-repeat;
 	width:55px;
 	height:55px;
 	background-position:-500px -98px;
@@ -60,6 +40,7 @@ footer a {
 	position:fixed;
 	left:45%;
 	top:10px;
+	border: 0;
 	background-image:url(../images/icon_collect.png);
 	background-repeat:no-repeat;
 	width:50px;
